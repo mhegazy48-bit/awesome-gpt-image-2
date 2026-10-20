@@ -1059,7 +1059,7 @@ function Hero({ latestCases, language, repoUrl, totalCases, categoryCount, onOpe
           <span><strong>{categoryCount}</strong> {t.categories}</span>
           <span><strong>20+</strong> {t.templates}</span>
         </div>
-        <Terrain className="heroTerrain" theme="dark" />
+        <Terrain className="heroTerrain" theme="dark" play />
       </div>
       <div className="heroDeck" aria-label="Latest GPT-Image2 cases">
         {latestCases.slice(0, 5).map((caseItem, index) => (
