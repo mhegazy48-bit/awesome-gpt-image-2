@@ -655,6 +655,12 @@ button {
   min-height: 560px;
 }
 
+.heroTerrain {
+  width: min(320px, 100%);
+  aspect-ratio: 1;
+  margin-top: 28px;
+}
+
 .heroCard {
   position: absolute;
   display: block;

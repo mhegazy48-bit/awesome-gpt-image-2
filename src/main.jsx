@@ -32,6 +32,7 @@ import {
   WandSparkles,
   X
 } from 'lucide-react';
+import { Terrain } from '@lucasmarkes/hairline/react';
 import './styles.css';
 import { isSupabaseConfigured, supabase } from './supabaseClient';
 import { CommunityAdminSection, CommunityPage } from './community';
@@ -1058,6 +1059,7 @@ function Hero({ latestCases, language, repoUrl, totalCases, categoryCount, onOpe
           <span><strong>{categoryCount}</strong> {t.categories}</span>
           <span><strong>20+</strong> {t.templates}</span>
         </div>
+        <Terrain className="heroTerrain" theme="dark" />
       </div>
       <div className="heroDeck" aria-label="Latest GPT-Image2 cases">
         {latestCases.slice(0, 5).map((caseItem, index) => (
